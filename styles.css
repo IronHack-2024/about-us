@@ -54,8 +54,33 @@ header {
     }
 
 .pixelated-text {
-color: white;  
+  color: white;
+  width: 1000px;
+  font-family: monospace;
+  font-size: 24px;
 }
+
+@media (max-width: 1024px) {
+  .pixelated-text {
+    /* Styles for screens 1024px or narrower */
+    width: 800px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pixelated-text {
+    /* Styles for screens 768px or narrower */
+    width: 700px;
+  }
+}
+
+@media (max-width: 576px) {
+  .pixelated-text {
+    /* Styles for screens 768px or narrower */
+    width: 500px;
+  }
+}
+
 
 .image-grid {
   display: grid;
@@ -66,6 +91,14 @@ color: white;
   align-items: center;
   width: 500px;
   margin: auto;
+}
+
+@media (max-width: 768px) {
+  .image-grid  {
+    /* Styles for screens 768px or narrower */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
 }
 
 .hidden-element {
