@@ -98,7 +98,7 @@ header {
 
 @media (max-width: 400px) {
   .pixelated-text {
-    /* Styles for screens 576px or narrower */
+    /* Styles for screens 400px or narrower */
     width: 300px;
   }
 }
@@ -116,7 +116,7 @@ header {
 
 @media (max-width: 1024px) {
   .image-grid  {
-    /* Styles for screens 768px or narrower */
+    /* Styles for screens 1024px or narrower */
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
   }
@@ -184,8 +184,15 @@ header {
 
 @media (max-width: 576px) {
   .typewriter h1 {
-    /* Styles for screens 768px or narrower */
+    /* Styles for screens 576px or narrower */
     font-size: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .typewriter h1 {
+    /* Styles for screens 400px or narrower */
+    font-size: 26px;
   }
 }
 
