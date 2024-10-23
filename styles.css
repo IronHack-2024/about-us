@@ -95,6 +95,27 @@ color: white;
   animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
 }
 
+@media (max-width: 1024px) {
+  .typewriter h1 {
+    /* Styles for screens 1024px or narrower */
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .typewriter h1 {
+    /* Styles for screens 768px or narrower */
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .typewriter h1 {
+    /* Styles for screens 768px or narrower */
+    font-size: 30px;
+  }
+}
+
 .typewriter-container {
 display: none; /* Hidden initially */
 width: fit-content;
