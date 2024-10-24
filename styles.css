@@ -112,6 +112,7 @@ header {
   align-items: center;
   width: 500px;
   margin: auto;
+  margin-bottom: 48px;
 }
 
 @media (max-width: 1024px) {
@@ -146,25 +147,13 @@ header {
   top: 34px;
 }
 
-/* .main-user-block:hover .name-element {
-  position: relative;
-  left: 49px;
-} */
-
-
-
 .name-element{
   color: white;
 }
 
 .hidden-element {
   display: none;
-  /* color: white */
 }
-
-/* .hidden-element:hover{
-  display: block;
-} */
 
 .name-container{
   display: flex;
