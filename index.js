@@ -61,4 +61,4 @@ const intervalId = setInterval(draw, 30);
 setTimeout(() => {
   clearInterval(intervalId);
   fadeOut(); // Start the fade-out effect
-}, 8000);
+}, 6000);
