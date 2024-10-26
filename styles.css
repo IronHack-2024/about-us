@@ -141,11 +141,18 @@ header {
 
   }
 }
+
 .main-user-block:hover .hidden-element {
   display: block;
   position: absolute;
   top: 34px;
 }
+
+.main-user-block:hover .headshot {
+  background-color: #41fd5b;
+  filter: none
+}
+
 
 .name-element{
   color: white;
