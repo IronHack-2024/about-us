@@ -1,36 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Code Quest</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="styles.css">    
-</head>
-<body style="display: flex;">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body style="display: flex">
     <div>
-        <header>
-            <a href="./index.html"><img class="logo" src="./images/image.svg" alt="logo"></a>
-            <div class="header-items">
-                <div><a href="./about-us.html">About</a></div>
-                <div><a href="./docs.html">Docs</a></div>
-                <div style="word-spacing: -6px;">Daily Question</div>
-            </div>
-        </header>
-
-        <div class="page-one">
-            <canvas id="Matrix"></canvas>
+      <header class="collapsible-header">
+        <a href="./index.html"
+          ><img class="logo" src="./images/image.svg" alt="logo"
+        /></a>
+        <div class="header-items">
+          <div><a href="./about-us.html">About</a></div>
+          <div><a href="./docs.html">Docs</a></div>
+          <div class="daily-question">Daily Question</div>
         </div>
+      </header>
 
-        <div class="typewriter-container">
-            <div class="typewriter">
-                <h1>CODE QUEST</h1>
-            </div>
+      <header class="hamburger-menu">
+        <a href="./index.html"
+          ><img class="logo" src="./images/image.svg" alt="logo"
+        /></a>
+        <div class="header-items">
+          <button class="hamburger" id="hamburger">☰</button>
+          <ul class="nav-menu" id="nav-menu">
+            <li><a href="./about-us.html">About</a></li>
+            <li><a href="./docs.html">Docs</a></li>
+            <li><a href="#">Daily Question</a></li>
+          </ul>
         </div>
+      </header>
+
+      <div class="page-one">
+        <canvas id="Matrix"></canvas>
+      </div>
+
+      <div class="typewriter-container">
+        <div class="typewriter">
+          <h1>CODE QUEST</h1>
+        </div>
+      </div>
     </div>
 
     <script src="./index.js"></script>
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>
