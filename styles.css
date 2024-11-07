@@ -236,6 +236,7 @@ header {
   font-family: oxanium;
   border: solid white 1px;
   padding: 20px;
+  margin-bottom: 20px;
 }
 
 /* media queries */
