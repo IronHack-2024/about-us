@@ -10,6 +10,53 @@ a {
   color: #41fd5b;
 }
 
+.hamburger-menu {
+  display: none;
+}
+
+.hamburger {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Menu Styling */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+/* Hide menu by default on mobile */
+.nav-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 33%;
+  background-color: #245f2c;
+  font-size: 0.8rem;
+  padding: 10px 20px;
+}
+
+.nav-menu li {
+  padding: 0.5rem 0;
+}
+
+.nav-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Show menu when .show class is added */
+.nav-menu.show {
+  display: flex;
+}
+
+
 header {
   display: flex;
   flex-direction: row;
@@ -26,51 +73,34 @@ header {
   z-index: 1000;
 }
 
+.daily-question {
+  word-spacing: -6px
+}
+
 .logo {
-    height: 70px;
-    padding-left: 10px;
+  height: 70px;
+  padding-left: 10px;
 }
 
 .headshot {
-    height: 200px;
-    width: 200px;
-    background-color: white;
-    border-radius: 50%;
-    overflow: visible;
-    position: relative;
-    filter: grayscale(100%); /* make the image black and white */
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  border-radius: 50%;
+  overflow: visible;
+  position: relative;
+  filter: grayscale(100%);
+  /* make the image black and white */
 }
 
-@media (max-width: 768px) {
-  .headshot {
-    /* Styles for screens 768px or narrower */
-    height: 250px;
-    width: 250px;
-  }
-}
-
-.headshot:hover{
+.headshot:hover {
   background-color: #41fd5b;
   filter: none
 }
 
 .pixelated-header {
-    color: #41fd5b;
-    font-size: 24px;
-    }
-
-@media (max-width: 576px) {
-  .pixelated-header {
-    /* Styles for screens 576px or narrower */
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 400px) {
-  .pixelated-header {
-    /* Styles for screens 400px or narrower */
-    font-size: 12px;
-  }
+  color: white;
+  font-size: 24px;
 }
 
 .body-text {
@@ -78,27 +108,6 @@ header {
   width: 1000px;
   font-family: 'Oxanium';
   font-size: 1.3rem;
-}
-
-@media (max-width: 1024px) {
-  .body-text {
-    /* Styles for screens 1024px or narrower */
-    width: 700px;
-  }
-}
-
-@media (max-width: 576px) {
-  .body-text {
-    /* Styles for screens 576px or narrower */
-    width: 380px;
-  }
-}
-
-@media (max-width: 400px) {
-  .body-text {
-    /* Styles for screens 400px or narrower */
-    width: 300px;
-  }
 }
 
 .image-grid {
@@ -111,33 +120,6 @@ header {
   width: 500px;
   margin: auto;
   margin-bottom: 48px;
-}
-
-@media (max-width: 1024px) {
-  .image-grid  {
-    /* Styles for screens 1024px or narrower */
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .image-grid  {
-    /* Styles for screens 768px or narrower */
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    width: 100%;
-
-  }
-}
-
-@media (max-width: 767px) {
-  .image-grid  {
-    /* Styles for screens 767px or narrower */
-    grid-template-columns: repeat(1, 1fr);
-    width: 100%;
-
-  }
 }
 
 .main-user-block:hover .hidden-element {
@@ -159,7 +141,7 @@ header {
   top: 34px;
 }
 
-.name-element{
+.name-element {
   color: white;
   font-family: 'Oxanium';
 }
@@ -169,7 +151,7 @@ header {
   opacity: 0%;
 }
 
-.name-container{
+.name-container {
   display: flex;
   gap: 20px;
   justify-content: center;
@@ -180,50 +162,28 @@ header {
 .typewriter h1 {
   font-size: 80px;
   color: #41fd5b;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid white; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em; /* Adjust as needed */
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid white;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em;
+  /* Adjust as needed */
   animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
 }
 
-@media (max-width: 1024px) {
-  .typewriter h1 {
-    /* Styles for screens 1024px or narrower */
-    font-size: 60px;
-  }
-}
-
-@media (max-width: 768px) {
-  .typewriter h1 {
-    /* Styles for screens 768px or narrower */
-    font-size: 50px;
-  }
-}
-
-@media (max-width: 576px) {
-  .typewriter h1 {
-    /* Styles for screens 576px or narrower */
-    font-size: 30px;
-  }
-}
-
-@media (max-width: 400px) {
-  .typewriter h1 {
-    /* Styles for screens 400px or narrower */
-    font-size: 26px;
-  }
-}
-
 .typewriter-container {
-display: none; /* Hidden initially */
-width: fit-content;
-align-items: center;
-justify-content: center;
-width: 100vw;
-height: calc(100vh - 70px);
-position: relative;
+  display: none;
+  /* Hidden initially */
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: calc(100vh - 70px);
+  position: relative;
 }
 
 .text-container {
@@ -239,11 +199,13 @@ position: relative;
   align-items: center;
   margin: 30px 100px 0 100px;
 }
+
 /* The typing effect */
 @keyframes typing {
   from {
     width: 0;
   }
+
   to {
     width: 100%;
   }
@@ -251,11 +213,127 @@ position: relative;
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
+
   from,
   to {
     border-color: transparent;
   }
+
   50% {
     border-color: white;
+  }
+}
+
+/* docs */
+
+.examples-container {
+  width: 800px;
+}
+
+.docs-text {
+  font-size: 1.3rem;
+  color: white;
+  font-family: oxanium;
+  border: solid white 1px;
+  padding: 20px;
+}
+
+/* media queries */
+
+@media (max-width: 1024px) {
+  .examples-container {
+    width: 700px;
+  }
+
+  .docs-text {
+    font-size: 1.1rem;
+  }
+
+  .body-text {
+    width: 700px;
+  }
+
+  .image-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .typewriter h1 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .examples-container {
+    width: 500px;
+  }
+
+  .collapsible-header {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .headshot {
+    height: 250px;
+    width: 250px;
+  }
+
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    width: 100%;
+  }
+
+  .typewriter h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .image-grid {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+
+  }
+}
+
+@media (max-width: 576px) {
+  .examples-container {
+    width: 380px;
+  }
+
+  .pixelated-header {
+    font-size: 16px;
+  }
+
+  .body-text {
+    width: 380px;
+  }
+
+  .typewriter h1 {
+    /* Styles for screens 576px or narrower */
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .examples-container {
+    width: 340px;
+  }
+
+  .pixelated-header {
+    font-size: 12px;
+  }
+
+  .body-text {
+    width: 300px;
+  }
+
+  .typewriter h1 {
+    /* Styles for screens 400px or narrower */
+    font-size: 26px;
   }
 }
